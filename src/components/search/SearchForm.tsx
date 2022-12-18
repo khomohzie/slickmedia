@@ -21,11 +21,15 @@ const SearchForm = () => {
 	const onSubmit: SubmitHandler<Inputs> = async (data) => {
 		console.log(data);
 
-		const movieData = await axios.get(
-			`https://www.omdbapi.com/?t=${data.name}&apikey=5ba563e2&r=json`
-		);
+		try {
+			const movieData = await axios.get(
+				`https://www.omdbapi.com/?t=${data.name}&apikey=5ba563e2&r=json`
+			);
 
-		setSearchedMovie(movieData);
+			setSearchedMovie(movieData);
+		} catch (e) {
+			console.log(e);
+		}
 
 		reset();
 	};
