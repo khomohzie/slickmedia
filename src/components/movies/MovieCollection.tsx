@@ -78,7 +78,7 @@ const MovieCollection = () => {
 
 	useEffect(() => {
 		getMovies();
-	}, []);
+	});
 
 	return (
 		<Container>
