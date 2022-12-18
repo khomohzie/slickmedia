@@ -38,31 +38,31 @@ const MovieCollection = () => {
 		});
 
 		const data = await axios.get(
-			`http://www.omdbapi.com/?t=${movieTitles[0]}&apikey=5ba563e2&r=json`
+			`https://www.omdbapi.com/?t=${movieTitles[0]}&apikey=5ba563e2&r=json`
 		);
 		const data1 = await axios.get(
-			`http://www.omdbapi.com/?t=${movieTitles[1]}&apikey=5ba563e2&r=json`
+			`https://www.omdbapi.com/?t=${movieTitles[1]}&apikey=5ba563e2&r=json`
 		);
 		const data2 = await axios.get(
-			`http://www.omdbapi.com/?t=${movieTitles[2]}&apikey=5ba563e2&r=json`
+			`https://www.omdbapi.com/?t=${movieTitles[2]}&apikey=5ba563e2&r=json`
 		);
 		const data3 = await axios.get(
-			`http://www.omdbapi.com/?t=${movieTitles[3]}&apikey=5ba563e2&r=json`
+			`https://www.omdbapi.com/?t=${movieTitles[3]}&apikey=5ba563e2&r=json`
 		);
 		const data4 = await axios.get(
-			`http://www.omdbapi.com/?t=${movieTitles[4]}&apikey=5ba563e2&r=json`
+			`https://www.omdbapi.com/?t=${movieTitles[4]}&apikey=5ba563e2&r=json`
 		);
 		const data5 = await axios.get(
-			`http://www.omdbapi.com/?t=${movieTitles[5]}&apikey=5ba563e2&r=json`
+			`https://www.omdbapi.com/?t=${movieTitles[5]}&apikey=5ba563e2&r=json`
 		);
 		const data6 = await axios.get(
-			`http://www.omdbapi.com/?t=${movieTitles[6]}&apikey=5ba563e2&r=json`
+			`https://www.omdbapi.com/?t=${movieTitles[6]}&apikey=5ba563e2&r=json`
 		);
 		const data7 = await axios.get(
-			`http://www.omdbapi.com/?t=${movieTitles[7]}&apikey=5ba563e2&r=json`
+			`https://www.omdbapi.com/?t=${movieTitles[7]}&apikey=5ba563e2&r=json`
 		);
 		const data8 = await axios.get(
-			`http://www.omdbapi.com/?t=${movieTitles[8]}&apikey=5ba563e2&r=json`
+			`https://www.omdbapi.com/?t=${movieTitles[8]}&apikey=5ba563e2&r=json`
 		);
 
 		setMovie(data);

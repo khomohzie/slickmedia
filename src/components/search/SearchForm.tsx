@@ -22,7 +22,7 @@ const SearchForm = () => {
 		console.log(data);
 
 		const movieData = await axios.get(
-			`http://www.omdbapi.com/?t=${data.name}&apikey=5ba563e2&r=json`
+			`https://www.omdbapi.com/?t=${data.name}&apikey=5ba563e2&r=json`
 		);
 
 		setSearchedMovie(movieData);
