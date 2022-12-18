@@ -67,6 +67,10 @@ const Container = styled.div`
 	h3 {
 		text-transform: capitalize;
 	}
+
+	@media (max-width: 450px) {
+		margin: 32px 24px;
+	}
 `;
 
 const Title = styled.div`

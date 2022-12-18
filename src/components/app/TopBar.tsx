@@ -16,6 +16,13 @@ const TopBar = () => {
 const Container = styled.div`
 	background: #292929;
 	border: none !important;
+
+	@media (max-width: 800px) {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
 `;
 
 const Brand = styled.button`

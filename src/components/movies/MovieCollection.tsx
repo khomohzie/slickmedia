@@ -126,11 +126,16 @@ const MovieCollection = () => {
 
 const Container = styled.div`
 	margin: 0 56px;
+	margin-right: 0;
 
 	font-weight: 400;
 	font-size: 24px;
 	line-height: 31px;
 	text-transform: capitalize;
+
+	@media (max-width: 450px) {
+		margin-left: 24px;
+	}
 `;
 
 const Row = styled.div`
